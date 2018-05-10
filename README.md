@@ -1,6 +1,7 @@
 # Thymeleaf-in-action
 Thymeleaf使用例子。实现用户管理系统。包括增删改查等操作
 1.Controller用户入口，定义接口方法
+```
 @RestController
 @RequestMapping("/users")
 public class UserController {
@@ -93,8 +94,9 @@ public class UserController {
     }
     
 }
+```
 2.定义User的接口，以及对其实现
-
+```
 @Repository
 public class UserRepositoryImpl implements UserRepository{
 
@@ -128,7 +130,8 @@ public class UserRepositoryImpl implements UserRepository{
     public List<User> listUser() {
         return new ArrayList<User>(this.userMap.values());
     }
-    3.对应的html页面
+```
+3.对应的html页面
 ```
 <!DOCTYPE html>
 
