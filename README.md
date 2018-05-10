@@ -129,7 +129,8 @@ public class UserRepositoryImpl implements UserRepository{
         return new ArrayList<User>(this.userMap.values());
     }
     3.对应的html页面
-    <!DOCTYPE html>
+```
+<!DOCTYPE html>
 
 <html xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
@@ -171,5 +172,6 @@ public class UserRepositoryImpl implements UserRepository{
 <div th:replace="~{fragments/footer :: footer}">...</div>
 </body>
 </html>
+```
 
 更对详情请查看源代码
